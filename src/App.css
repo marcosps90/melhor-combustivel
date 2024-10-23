@@ -1,0 +1,102 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bomba-gasolina {
+  width: 350px;
+  height: auto;
+  background-color: #fc0000;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.bomba-display {
+  width: 85%;
+  background-color: #f6f8df;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.bomba-display p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #fc0000; /* Muda a borda do input quando focado */
+  outline: none; /* Remove o contorno padrão */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fc0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-top: 10px;
+  transition: background-color 0.3s; /* Adiciona uma transição ao hover */
+}
+
+button:hover {
+  background-color: #fca400;
+}
+
+.hose {
+  position: absolute;
+  width: 15px;
+  height: 180px;
+  background-color: #333;
+  right: -15px;
+  top: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+.hose:before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background-color: #fca400;
+  border-radius: 10px;
+  top: 170px;
+  left: -5px;
+}
+
+.resultados {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Estilo para mensagens de erro */
+.error {
+  color: rgb(255, 174, 0);
+  font-size: 1em;
+  margin-top: 10px;
+}
